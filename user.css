@@ -1,0 +1,78 @@
+
+body{
+    background-color: #ffffff;
+    backdrop-filter: blur(5px);
+}
+.userpage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    border-radius: 50%;
+    width: 150px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 30px;
+    font-weight:900;
+    margin-left: 50px;
+}
+span{
+    margin-top: 100px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.userinfo{
+    box-shadow: 3px black;
+    width: 500px;
+    border-right: 1px solid black;
+    margin-top: 150px;
+}
+button:hover{
+    cursor: pointer;
+}
+.bundle{
+    margin-top: 150px;
+    margin-left: 100px;
+    padding-left: 30px;
+    border-radius: 15px;
+    width: 300px;
+    height: 270px;
+    border: none;
+    background-color: #8a350e;
+}
+.bundle h2{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.bundle #sys-name{
+    margin-top: 40px;
+    color: #ffffff;
+    margin-left: 40px;
+    font-size: 25px;
+}
+.bundle h4{
+    font-size: 20px;
+}
+.bundle #sys-price{
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 40px;
+}
+.bundle button{
+    margin-top: 10px;
+    margin-left: 60px;
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+.name , .email{
+    display: flex;
+    flex-direction: column-reverse;
+}

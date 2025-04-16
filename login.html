@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>GYM WEBSITE</title>
+    <link rel="stylesheet" type="text/css" href="login&register.css">
+</head>
+<body>
+    <div class ="wrapper">
+            <h2>login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email"  required id="username">
+                    <label>email</label>
+                    </div><br>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required id="password">
+                        <label>password</label>
+                        </div>    <br>
+                        <div class="remember-forget">
+                            <label> <input type="checkbox"> remember me</label>
+                            <a href="#">forget password</a>
+                            </div>  <br>  
+                            <button type="submit" class="btn" onclick="validateLoginForm()">login</button><br>
+                            <div class ="login-register" ><br>
+                                <p> don't have an account?  
+                                    <a href="register.html"class ="register-link">register</a></p>
+                            </div>     
+                            </form>
+                </div>  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

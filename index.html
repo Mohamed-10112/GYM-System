@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gym</title>
+</head>
+
+<body>
+    <header>
+        <h2><a href="#" class="logo">gy<span>m</span></a></h2>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#Classes">Classes</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#Contact-Us">Contact Us</a></li>
+            <li id="user-link" style="display: none;"><a href="user.html">Your info</a></li>
+            <li id="logout-link" style="display: none;"><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </header>
+<!-- Home section --------------------------------------------------------------------------------------- -->
+    <section class="main">
+        <img src="img/pexels-photo-1229356.jpeg" id="home424">
+        <h4>work harder, get stronger</h4>
+        <h2><span>EASY WITH OUR</span> GYM</h2>
+        <a href="login.html" class="joinButton">Join Us</a>
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <button type="button" id="leftb" onclick="leftBtn()"><i class="fa-solid fa-chevron-left"></i></button>
+        <button type="button" id="rightb" onclick="rightBtn()"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
+<!-- Classes section ------------------------------------------------------------------------------------ -->
+    <section class="classes" id="Classes">
+        <br>
+        <h1 class="title">Classes</h1>
+        <div class="content">
+        
+            <div class="card">
+                <img src="img/uri_mh1724164090568.jpg" />
+                <h3>
+                    CARDIO
+                </h3>
+                <p>
+                    Our energetic Cardio Classes work your entire body and
+                    get your heart pumping.
+                    Get motivated, push past your limits and torch calories with a wide variety of
+                    endurance-building classes.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/IMG_20240820_223556.jpg">
+                <h3>STRENGTH</h3>
+                <p>
+                    Rise to the challenge with GoodLife’s Strength Classes.
+                    Build muscle, achieve your weight loss goals and
+                    maintain bone density, no matter your fitness level.
+                </p>
+            </div> 
+        
+            <div class="card">
+                <img src="img/uri_mh1724182751278.jpg">
+                <h3>MIND & BODY</h3>
+                <p>
+                    Put your mind at ease and get a full-body workout with 
+                    GoodLife’s Mind & Body Classes. Try everything from 
+                    Hot
+                    Yoga to Pilates andsweat your way to a healthy state.
+                </p>
+            </div>
+        
+            <div class="card">
+                <img src="img/uri_mh1724182727087.jpg">
+                <h3>DANCE</h3>
+                <p>
+                    Move and groove your way to a healthier body and
+                    mind.
+                    GoodLife’s Dance Fitness Classes are a combination of
+                    high-energy music and easy-to-follow dance moves 
+                    that’ll leave you wanting more.
+                </p>
+            </div>
+        
+            <div class="card">
+                <img src="img/WhatsApp_Image_2024-08-21_at_02.41.53.jpeg">
+                <h3>AQUA</h3>
+                <p>
+                    GoodLife’s low-impact, high-energy AquaFitnessClasses
+                    blend safe yet challenging cardio conditioning and full-body toning
+                    . give you
+                    an efficient workout
+                    in the pool. 
+                    You might not see the sweat, but you’ll feel the burn.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/kick.jpg">
+                <h3>Kickboxing</h3>
+                <p>
+                    A great exercise to learn self defense and the quickest way to get fit !
+                    Our mission is to provide the citizens - both male and female - with a one of a kind kickboxing experience where anyone
+                    from a beginner to a professional can learn to develop their skills.
+                </p>
+            </div>
+        
+        </div>
+    </section>
+<!-- Pricing section ------------------------------------------------------------------------------------ -->
+    <section class="pricing" id="Pricing">
+        <br>
+        <h1 class="title">Pricing</h1>
+        <div class="modifyy" id="modify" style="display: none;"> 
+            <div class="mody">
+                <input type="text" id="mod1" placeholder="Enter your modified price1">
+                <input type="text" id="mod2" placeholder="Enter your modified price2">
+                <input type="text" id="mod3" placeholder="Enter your modified price3">
+            </div>   
+            <button type="button" onclick="modifyPrice()">submit</button>
+        </div>
+        <div class="content2">
+            <div class="option1">
+                <h2>Basic</h2>
+                <h4><span id="pr1">$   </span>/Month</h4>
+                <ul>
+                    <li>Personal Trainer</li>
+                    <li>Certified Staff</li>
+                    <li>smart workout plans</li>
+                    <li>at home workouts</li>
+                </ul>
+                <a href="#" class="join-plans1" id="sys1" onclick="bundleInfo1()">Get Basic Plan</a>
+            </div>
+            
+            <div class="option2">
+                <h2>Pro</h2>
+                <h4><span id="pr2">$   </span>/Month</h4>
+                <ul>
+                    <li>Personal Trainer</li>
+                    <li>Certified Staff</li>
+                    <li>Childcare</li>
+                    <li>pro gyms</li>
+                    <li>smart workout plans</li>
+                    <li>at home workouts</li>
+                    <li>Cardio Equipment</li>
+                </ul>
+                <a href="#" class="join-plans2" id="sys2" onclick="bundleInfo2()">Get Pro Plan</a>
+            </div>
+            
+            <div class="option3">
+                <h2>Premium</h2>
+                <h4><span id="pr3">$   </span>/Month</h4>
+                <ul>
+                    <li>Personal Trainer</li>
+                    <li>Certified Staff</li>
+                    <li>Childcare</li>
+                    <li>smart workout plans</li>
+                    <li>at home workouts</li>
+                    <li>Cardio Equipment</li>
+                    <li>Yoga classes</li>
+                    <li>Kick Boxing</li>
+                    <li>SPA</li>
+                </ul>
+                <a href="#" class="join-plans3" id="sys3" onclick="bundleInfo3()">Get Premium Plan</a>
+            </div>
+        </div>
+        <br><br>
+    </section>
+<!-- Contact section ------------------------------------------------------------------------------------ -->
+    <section class="contact-us" id="Contact-Us">
+        <img src="img/contact.jpg">
+        <div class="modifyyy" id="contactSS" style="display: none;">
+            <div class="mody">
+                <input type="text" id="end" placeholder="weekends working hrs modification">
+                <input type="text" id="days" placeholder="weekdays working hrs modification">
+            </div>
+            <button type="button" onclick="modifyWorkHrs()">submit</button>
+        </div>
+        <div class="contactInfo">
+            <h3>CONTACT US</h3>
+            <h1>Contact info:</h1>
+            <div>
+                <h2>Address</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Ain shams university ,abaasya</p>
+                <p><i class="fa-solid fa-phone"></i> phone:123456789</p>
+                <p><i class="fa-regular fa-envelope"></i> hr@nitroGym.com</p>
+            </div>
+            <div>
+                <h2>working hours</h2>
+                <p> <span id="hrs1">6am :3am</span> on weekends</p>
+                <p><span id="hrs2">7am :1am </span> on weekdays</p>
+            </div>
+            <div>
+                <h2>Follow us on </h2>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS.js"></script>
+</body>
+</html>
